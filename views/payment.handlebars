@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="static/payment.css" type="text/css"/>
+</head>
+<body>
+    <div class="top1">
+        <div class="top2">
+            <h2><a href="cabhome.html" style="text-decoration: none; color: black;">TAKSi</a></h2>
+        </div>
+        <div class="top3">
+            <div class="button" >Contact Us</div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <form name="cabselect" method="post" class="box3">
+                <p style="font-size: 36px; text-align: center; "><b>Taksi Selection</b></p>
+                <select name="cabs" id="cabs" class="select">
+                    <option value="none">None---------------------------------------------------------------------0/-</option>
+                    <option value="Bike">Bike---------------------------------------------------------------------100/-</option>
+                    <option value="Auto">Auto----------------------------------------------------------------------80/-</option>
+                    <option value="Cab">Cab---------------------------------------------------------------------200/-</option>
+                  </select>
+                  <br>
+                  <div>
+                    {{!-- {{#if (value == "none")}}
+                    <div style="width:380px; height:40px; color:red;">30</div>
+                    {{else}} {{if value == "Bike"}}
+                    <div style="width:380px; height:40px; color:red;">30</div>
+                    {{else if value == "Auto"}}
+                    <div style="width:380px; height:40px; color:red;">30</div>
+                    {{else value == "Cab"}}
+                    <div style="width:380px; height:40px; color:red;">30</div>
+                    {{/if}} --}}
+                  </div>
+                  <!-- <button type="submit" class="btn" style="margin-left: 115px ;">Proceed</button> -->
+            </form>
+        </div>
+        <div class="box2">
+            <form name="payment" method="post" action="" class="box3" >
+                <p style="font-size: 36px; text-align: center; "><b>Payment Option</b></p>
+                <table><input type="radio" id="credit" name="option" value="1" />Credit Card
+                    <input type="radio" id="debit" name="option" value="2" />Debitit Card
+                    <input type="radio" id="upi" name="option" value="2" />UPI</table>
+                <button type="submit" class="btn" style="margin-left: 115px ;">Proceed</button>
+            </form> 
+        </div>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/myride.css" type="text/css"/>
+</head>
+<body>
+    <div class="top1">
+        <div class="top2">
+            <h2><a href="cabhome.html" style="text-decoration: none; color: black;">TAKSi</a></h2>
+        </div>
+        <div class="top3">
+            <div class="button" >Contact Us</div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+    <a href="/cabbook" class="btn btn-primary">+ Pre Book</a>
+    <table class="table table-striped mt-4">
+        <tr>
+            <th>Id</th>
+            <th>Pickup</th>
+            <th>Destination</th>
+            <th>Date of Travel</th>
+            <th>Time of Travel</th>
+            <th>No of Passengers</th>
+            <th>Mobile No</th>
+            <th>Action</th>
+        </tr>
+        {{#each data}}
+        <tr>
+            <td>{{this.dataValues.booking_id}}</td>
+            <td>{{this.dataValues.PickUp}}</td>
+            <td>{{this.dataValues.Destination}}</td>
+            <td>{{this.dataValues.DateOfTravel}}</td>
+            <td>{{this.dataValues.TimeOfTravel}}</td>
+            <td>{{this.dataValues.NoOfPassengers}}</td>
+            <td>{{this.dataValues.MobileNo}}</td>
+            <td>
+                <a href="/update/{{this.dataValues.booking_id}}">Edit</a> |
+                <a href="/delete/{{this.dataValues.booking_id}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+    </div>
+</body>
+</html>
