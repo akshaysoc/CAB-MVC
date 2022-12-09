@@ -10,7 +10,7 @@
 <body>
     <div class="top1">
         <div class="top2">
-            <h2><a href="cabhome.html" style="text-decoration: none; color: black;">TAKSi</a></h2>
+            <h2><a href="/index" style="text-decoration: none; color: black;">TAKSi</a></h2>
         </div>
         <div class="top3">
             <div class="button" >Contact Us</div>
@@ -21,33 +21,28 @@
             <form name="cabselect" method="post" class="box3">
                 <p style="font-size: 36px; text-align: center; "><b>Taksi Selection</b></p>
                 <select name="cabs" id="cabs" class="select">
-                    <option value="none">None---------------------------------------------------------------------0/-</option>
-                    <option value="Bike">Bike---------------------------------------------------------------------100/-</option>
-                    <option value="Auto">Auto----------------------------------------------------------------------80/-</option>
-                    <option value="Cab">Cab---------------------------------------------------------------------200/-</option>
+                    <option value="none">---------------------------------Cab Type-----------------------------------</option>
+                    <option value="Bike">----------------------------Ford - Super Cab------------------------------</option>
+                    <option value="Auto">----------------------------Chevrolet - Double Cab----------------------</option>
+                    <option value="Cab">----------------------------GMC - Double Cab----------------------------</option>
+                    <option value="Cab">----------------------------Volvo - Quad Cab------------------------------</option>
+                    <option value="Cab">----------------------------Toyota - Access Cab--------------------------</option>
+                    <option value="Cab">----------------------------Nissan - King Cab-----------------------------</option>
                   </select>
                   <br>
-                  <div>
-                    {{!-- {{#if (value == "none")}}
-                    <div style="width:380px; height:40px; color:red;">30</div>
-                    {{else}} {{if value == "Bike"}}
-                    <div style="width:380px; height:40px; color:red;">30</div>
-                    {{else if value == "Auto"}}
-                    <div style="width:380px; height:40px; color:red;">30</div>
-                    {{else value == "Cab"}}
-                    <div style="width:380px; height:40px; color:red;">30</div>
-                    {{/if}} --}}
-                  </div>
                   <!-- <button type="submit" class="btn" style="margin-left: 115px ;">Proceed</button> -->
             </form>
         </div>
         <div class="box2">
             <form name="payment" method="post" action="" class="box3" >
                 <p style="font-size: 36px; text-align: center; "><b>Payment Option</b></p>
-                <table><input type="radio" id="credit" name="option" value="1" />Credit Card
+                <table cellspacing="10">
+                    <td>
+                    <input type="radio" id="credit" name="option" value="1" />Credit Card
                     <input type="radio" id="debit" name="option" value="2" />Debitit Card
-                    <input type="radio" id="upi" name="option" value="2" />UPI</table>
-                <button type="submit" class="btn" style="margin-left: 115px ;">Proceed</button>
+                    <input type="radio" id="upi" name="option" value="2" />UPI
+                    </td></table>
+                <div class="btn" ><a  href="/invoice/{{pay_id}}" style="text-decoration:none; ">Proceed</a></div>
             </form> 
         </div>
     </div>   

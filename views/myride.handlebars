@@ -12,7 +12,7 @@
 <body>
     <div class="top1">
         <div class="top2">
-            <h2><a href="cabhome.html" style="text-decoration: none; color: black;">TAKSi</a></h2>
+             <h2><b><a href="/index" style="text-decoration: none; color: black;font-size:26px;">TAKSi</a></b></h2>
         </div>
         <div class="top3">
             <div class="button" >Contact Us</div>
@@ -21,9 +21,10 @@
     <br><br>
     <div class="container">
     <a href="/cabbook" class="btn btn-primary">+ Pre Book</a>
-    <table class="table table-striped mt-4">
+    <table class="table table-hover table-dark mt-4">
         <tr>
-            <th>Id</th>
+            <th>ID</th>
+            <th>User ID</th>
             <th>Pickup</th>
             <th>Destination</th>
             <th>Date of Travel</th>
@@ -35,6 +36,7 @@
         {{#each data}}
         <tr>
             <td>{{this.dataValues.booking_id}}</td>
+            <td>{{this.dataValues.user_id}}</td>
             <td>{{this.dataValues.PickUp}}</td>
             <td>{{this.dataValues.Destination}}</td>
             <td>{{this.dataValues.DateOfTravel}}</td>

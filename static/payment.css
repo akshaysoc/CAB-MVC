@@ -1,5 +1,8 @@
 body{
-    background-color: black;
+    background-image: url('image/pay3.jpg');
+    background-position: center ;
+    background-size:cover ;
+    background-repeat:no-repeat ;
     margin: 0px;
 }
 .top1{
@@ -18,7 +21,7 @@ body{
     width:60vw;
     height:10vh;
     color:black;
-    font-family: fantasy;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: large;
     display: flex;
     align-items: center;
@@ -26,11 +29,11 @@ body{
     position:absolute ; left:-20px; 
 }
 .top3{
-    width:15vw;
+    width:10vw;
     height:10vh;
     position:absolute ; right:10px;
-    font-size:26px;
-    font-family: fantasy;
+    font-size:24px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     color:black;
     display: flex;
     justify-content: space-evenly;
@@ -40,7 +43,8 @@ body{
 .button{
     width:9vw;
     height:5vh;
-    border-radius: 1cm;
+    padding: 0 2px 0 2px;
+    border-radius: 0.5cm;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,27 +64,26 @@ body{
     cursor: pointer;
 }
 .box{
-    width: 1510px;
-    height: 600px;
-    margin-top: 30px;
-    /* background-color: aliceblue; */
+    width: 1535px;
+    height: 670px;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly; 
+    z-index: -1;
+    background-color: rgba(25, 20, 22, 65%);
 }
 .box1{
     width: 500px;
     height: 600px;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .box2{
     width: 500px;
     height: 600px;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +92,7 @@ body{
 .box3{
     font-size:x-large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #f1f1f1;
+    color: white;
     justify-content: center;
     align-items: center;
     width:400px;
@@ -98,12 +101,14 @@ body{
     padding: 30px 30px;
     line-height:41px ;
     /*trbl*/
+    background-color: rgba(25, 20, 22, 0.449);
     
 }
 .select{
     height: 40px;
     width:380px;
     border-radius: 10px;
+    margin-left: 12px;
 }
 
 input[type=text]{
@@ -125,13 +130,14 @@ input[type=text]{
 
 .btn{
     background-color: black;
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
     width:150px;
     color:white;
     border-radius: 10px;
     padding:12px;
-    margin:30px 0px 10px 0;
+    margin:30px 0px 10px 100px;
     opacity: 1;
     cursor: pointer;
 
@@ -140,6 +146,7 @@ input[type=text]{
     background-color: rgb(255, 242, 0);
     color: black;
     opacity: .8;
+    border: 2px solid black;
 }
 .btn a{
     color: white;

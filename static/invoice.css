@@ -1,0 +1,126 @@
+body{
+    /* background-image: url('image/pay3.jpg');
+    background-position: center ;
+    background-size:cover ;
+    background-repeat:no-repeat ; */
+    background-color: white;
+    margin: 0px;
+}
+.top1{
+    width:1535px;
+    height:10vh;
+    margin: 0px;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:10px;
+    background-color: rgb(255, 242, 0);
+}
+.top2{
+    width:60vw;
+    height:10vh;
+    color:black;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 24px;
+    
+    display: flex;
+    align-items: center;
+    padding:0 0 0 50px;
+    position:absolute ; left:-20px; 
+}
+.top3{
+    width:18vw;
+    height:10vh;
+    position:absolute ; right:10px;
+    font-size:24px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.button{
+    width:9vw;
+    height:5vh;
+    padding: 0 2px 0 2px;
+    border-radius: 0.5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button a{
+    color: black;
+}
+
+.button:hover{
+    background-color: rgb(66, 64, 64) ;
+    color:  rgb(255, 242, 0);
+    cursor: pointer;
+}
+.button a:hover{
+    background-color: rgb(66, 64, 64) ;
+    color:  rgb(255, 242, 0);
+    cursor: pointer;
+}
+.box{
+    width: 1005px;
+    height: 570px;
+    margin-left: 500px;
+    justify-content: space-evenly; 
+    /* z-index: -1;
+    background-color: rgba(25, 20, 22, 65%); */
+}
+.box1{
+    width: 570px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    border: 2px solid black;
+    
+}
+
+.box3{
+    font-size:x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    width:500px;
+    height:300px;
+    border-radius: 10px;
+    line-height:20px ;
+    margin-top: 70px;
+    /*trbl*/
+    /* background-color: rgba(25, 20, 22, 0.449); */
+    
+}
+
+.btn{
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width:130px;
+    color:white;
+    border-radius: 10px;
+    padding:7px;
+    margin:20px 0px 10px 220px;
+    opacity: 1;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: rgb(255, 242, 0);
+    color: black;
+    opacity: .8;
+    border: 2px solid black;
+}
+.btn a{
+    color: white;
+}
+.btn a:hover{
+    color:black;
+}

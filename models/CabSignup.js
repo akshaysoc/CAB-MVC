@@ -27,6 +27,11 @@ const Cab = sequelize.define('Cab',{
     Cpassword: {
         type: DataTypes.STRING(50),
         allowNull: false
+    },
+    Role: {
+        type: DataTypes.INTEGER,
+        allowNull:false,
+        defaultValue: 1
     }
 });
 

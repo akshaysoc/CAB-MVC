@@ -1,5 +1,8 @@
 body{
-    background-color: black;
+    background-image: url('image/reg1.jpg');
+    background-position: center ;
+    background-size:cover ;
+    background-repeat:no-repeat ;
     margin: 0px;
 }
 .top1{
@@ -18,7 +21,7 @@ body{
     width:60vw;
     height:10vh;
     color:black;
-    font-family: fantasy;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: large;
     display: flex;
     align-items: center;
@@ -26,11 +29,11 @@ body{
     position:absolute ; left:-20px; 
 }
 .top3{
-    width:15vw;
+    width:10vw;
     height:10vh;
     position:absolute ; right:10px;
-    font-size:26px;
-    font-family: fantasy;
+    font-size:24px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     color:black;
     display: flex;
     justify-content: space-evenly;
@@ -40,7 +43,8 @@ body{
 .button{
     width:9vw;
     height:5vh;
-    border-radius: 1cm;
+    padding: 0 2px 0 2px;
+    border-radius: 0.5cm;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,34 +64,33 @@ body{
     cursor: pointer;
 }
 .box{
-    width: 1500px;
-    height: 1000px;
-    margin-top: 10px;
-    /* background-color: aliceblue; */
+    width: 1518px;
+    height: 800px;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
+    z-index: -1;
+    background-color: rgb(25 20 22 / 65%);
     
 }
 
 .box1{
     width: 500px;
-    height: 1000px;
-    margin-top: 10px;
-    /* background-color: red; */
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
 }
 .box2{
     font-size:x-large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: white;
+    color: white;
     justify-content: center;
     align-items: center;
     width:400px;
-    height:830px;
-    margin-top: 25px;
+    height:700px;
+  
     border-radius: 10px;
     padding:0px 30px 0px;
     line-height:40px ;

@@ -6,12 +6,6 @@ background-attachment: fixed;
 background-size: cover;
 margin: 0px;
 }
-/* .al{
-    color:black;
-}
-.al:hover{
-    color:rgb(255, 242, 0) ;
-} */
 
 .top1{
     width:1525px;
@@ -32,14 +26,15 @@ margin: 0px;
     font-size: large;
     display: flex;
     align-items: center;
-    padding:0 0 0 50px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+   
 }
 .top3{
-    width:22vw;
+    width:26vw;
     height:10vh;
     position:absolute ; right:10px;
-    font-size:26px;
-    font-family: fantasy;
+    font-size:24px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     color:black;
     display: flex;
     justify-content: space-evenly;
@@ -50,7 +45,8 @@ margin: 0px;
 .button{
     width:9vw;
     height:5vh;
-    border-radius: 1cm;
+    padding: 0 2px 0 2px;
+    border-radius: 0.5cm;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,28 +83,25 @@ margin: 0px;
 
 } */
 .box{
-    width: 1510px;
-    height: 600px;
-    margin-top: 30px;
-    /* background-color: aliceblue; */
+    width: 1535px;
+    height: 670px;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly; 
+    z-index: -1;
+    background-color: rgba(25, 20, 22, 0.408);
 }
 .box1{
-    width: 500px;
+    width: 400px;
     height: 250px;
-    padding-top: 45px;
-    padding-left: 20px;
     color: white;
     font-size: 36px;
-    /* background-color: aqua; */
     align-items: flex-start;
 }
 .box2{
     width: 500px;
     height: 600px;
-    /* background-color: red; */
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,13 +109,12 @@ margin: 0px;
 .box3{
     font-size:x-large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: white;
+    color: white;
     justify-content: center;
     align-items: center;
     width:400px;
     height:500px;
     border-radius: 10px;
-    padding:30px 30px;
     line-height:41px ;
   
     /*trbl*/

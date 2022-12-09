@@ -5,7 +5,7 @@ const ride = require('../models/CabBook');
 // }
 
 module.exports.show = (req, res, next) => {
-    ride.findAll().then(rides1 => {
+    ride.findAll({where: {user_id:req.session.userId},}).then(rides1 => {
         res.render('myride', {
             data: rides1,
             // identity: req.identity.user

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/fulldata.css" type="text/css"/>
+</head>
+<body>
+    <div class="top1">
+        <div class="top2">
+             <h2><b><a href="/admin" style="text-decoration: none; color: black;font-size:26px;">TAKSi</a></b></h2>
+        </div>
+        <div class="top3">
+            <div class="button" >Contact Us</div>
+            <div class="button" ><a  href="/logout" style="text-decoration:none; ">Log Out</a></div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+    <a href="/cabbook" class="btn btn-primary">Add Booking</a>
+    <table class="table table-hover table-dark mt-4">
+        <tr>
+            <th>ID</th>
+            <th>User ID</th>
+            <th>Pickup</th>
+            <th>Destination</th>
+            <th>Date of Travel</th>
+            <th>Time of Travel</th>
+            <th>No of Passengers</th>
+            <th>Mobile No</th>
+            <th>Action</th>
+        </tr>
+        {{#each data}}
+        <tr>
+            <td>{{this.dataValues.booking_id}}</td>
+            <td>{{this.dataValues.user_id}}</td>
+            <td>{{this.dataValues.PickUp}}</td>
+            <td>{{this.dataValues.Destination}}</td>
+            <td>{{this.dataValues.DateOfTravel}}</td>
+            <td>{{this.dataValues.TimeOfTravel}}</td>
+            <td>{{this.dataValues.NoOfPassengers}}</td>
+            <td>{{this.dataValues.MobileNo}}</td>
+            <td>
+                <a href="/update/{{this.dataValues.booking_id}}">Edit</a> |
+                <a href="/delete/{{this.dataValues.booking_id}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+    </div><br>
+    <div class="container">
+    <a href="/signup" class="btn btn-primary">Add User</a>
+    <table class="table table-hover table-dark mt-4">
+        <tr>
+            <th>User ID</th>
+            <th>Full Name</th>
+            <th>Mobile No</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        {{#each profiles}}
+        <tr>
+            <td>{{this.dataValues.id}}</td>
+            <td>{{this.dataValues.Fullname}}</td>
+            <td>{{this.dataValues.MobileNo}}</td>
+            <td>{{this.dataValues.Email}}</td>
+            <td>{{this.dataValues.Password}}</td>           
+            <td>
+                
+                <a href="/delete/{{this.dataValues.id}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </table></div><br>
+    <div class="container">
+    <a href="/driversignup" class="btn btn-primary">Add Driver</a>
+    <table class="table table-hover table-dark mt-4">
+        <tr>
+            <th>Driver ID</th>
+            <th>Full Name</th>
+            <th>Driving Lisence</th>
+            <th>Vehicle No</th>
+            <th>Mobile No</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        {{#each cabdriver}}
+        <tr>
+            <td>{{this.dataValues.id}}</td>
+            <td>{{this.dataValues.Fullname}}</td>
+            <td>{{this.dataValues.DrivingLisenceNo}}</td>
+            <td>{{this.dataValues.VehicleNo}}</td>
+            <td>{{this.dataValues.MobileNo}}</td>
+            <td>{{this.dataValues.Email}}</td>
+            <td>{{this.dataValues.Password}}</td>           
+            <td>
+                
+                <a href="/delete/{{this.dataValues.id}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </table></div><br>
+    <div class="container">
+    <a href="/addroutes" class="btn btn-primary" >Add Routes</a>
+         <table class="table table-hover table-dark mt-4">
+        <tr>
+            <th>Payment ID</th>
+            <th>Pick Up</th>
+            <th>Destination</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+        {{#each price}}
+        <tr>
+            <td>{{this.dataValues.pay_id}}</td>
+            <td>{{this.dataValues.PickUp}}</td>
+            <td>{{this.dataValues.Destination}}</td>
+            <td>{{this.dataValues.Price}}</td>          
+            <td>
+                <a href="/delete/{{this.dataValues.pay_id}}" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+    </div>
+</body>
+</html>

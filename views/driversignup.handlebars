@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab New User Signup</title>
+    <link rel="stylesheet" href="/static/driversignup.css" type="text/css"/>
+</head>
+<body>
+    <div class="top1">
+        <div class="top2">
+            <h2><a href="/home" style="text-decoration: none; color: black;">TAKSi</a></h2>
+        </div>
+        <div class="top3">
+            
+            <div class="button" >Contact Us</div>
+            
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <form class="box2" name="regform" id="regform" method="post">
+                <p style="font-size: 36px; text-align: center;"><b>Driver Sign UP</b></p>
+                <label for="name"  ><b>Fullname:</b></label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter Fullname" required><br>
+                <label for="lisence"><b>Driving Lisence:</b></label><br>
+                    <input type="text" id="lisence" name="lisence" placeholder="Enter Driving Lisence" required><br>
+                <label for="vehicleno"><b>Vehicle No:</b></label><br>
+                    <input type="text" id="vehicleno" name="vehicleno" placeholder="Enter Vehicle No" required><br>
+                <label for="mobile"><b>Mobile No:</b></label><br/>
+                    <input type="text" placeholder="Enter mobileno" name="mobile" required><br>
+                <label for="email"><b>Email id:</b></label><br/>
+                    <input type="text" placeholder="Enter email id"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email" id="email"><br>
+                <label for="password" > <b>Password:</b></label><br>
+                    <input type="password" id="password" name="password" placeholder="Password" class="psw"><br/>
+                <input type="checkbox" id="agree" name="agree" value="1" required><b style="font-size: 20px;">I agree to the terms and conditions</b>
+                <button type="submit" class="btn" id="btn-login" style="margin-left:50px ;"><b>Sign Up</b></button>
+            </form> 
+        </div>
+    </div>
+</body>
+</html>

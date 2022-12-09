@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Sign In</title>
+    <link rel="stylesheet" href="/static/driverlogin.css" type="text/css"/>
+</head>
+<body>
+    <div class="top1">
+        <div class="top2">
+            <h2><a href="/home" style="text-decoration: none; color: black;">TAKSi</a></h2>
+        </div>
+        <div class="top3">
+            <div class="button" >Contact Us</div>  
+        </div>
+    </div>
+    <div class="box">
+        <div class="box2">
+            <form name="signinform" method="post" action="" class="box3"  >
+                <p style="font-size: 36px; text-align: center;margin-right: 55px; "><b>Driver Login</b></p>
+                <label for="email"  ><b>Email:</b></label><br>
+                <input type="text" id="email" name="email" placeholder="Email" ><br/>
+                <label for="Password" > <b>Password:</b></label><br>
+                <input type="password" id="Password" name="Password" placeholder="Password" class="psw"><br/>
+                <span id="err-name" style="color: red;display:block"></span>
+            <table>
+                <tr><button type="submit" class="btn" style="margin-left:25px ;">Login</button>
+                <button type="submit" class="btn" style="margin-left:10px ;"><a href="/driversignup" style="text-decoration:none;">New Driver</a></button></tr>
+            </table>
+                <label style="margin-left:100px ;">Forgot <a href="#" style="color: rgb(255, 242, 0);">password?</a></label>
+                
+            </form> 
+        </div>
+    </div>   
+</body>
+</html>
